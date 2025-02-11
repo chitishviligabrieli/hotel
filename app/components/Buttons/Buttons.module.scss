@@ -1,0 +1,38 @@
+.container {
+  background-color: #2D3856;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #FFF;
+
+  &:hover {
+    background-color: #4561AD;
+    font-size: 1em;
+  }
+}
+
+.small {
+  width: 116px;
+  height: 44px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.medium {
+  width: 167px;
+  height: 86px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.big {
+  width: 315px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}

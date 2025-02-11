@@ -1,5 +1,8 @@
-// import BestRooms from "@/app/components/BestRooms/BestRooms";
+'use client'
 import BestRoomsSlider from "@/app/components/BestRoomsSlider/BestRoomsSlider";
+import MainComp from "@/app/components/Main/Main";
+import styles from './page.module.scss'
+import Navbar from "@/app/components/Navbar/Navbar";
 
 const bestRoomsData = {
     bestRooms: [
@@ -69,6 +72,14 @@ const bestRoomsData = {
 
 export default function Home() {
     return (
-        <BestRoomsSlider bestRooms={bestRoomsData.bestRooms}/>
+        <>
+            <Navbar/>
+            <div className={styles.wrapper}>
+                <div className={styles.container}>
+                    <MainComp h1={'შენი იდეალური დასვენების ადგილი'} slogan={'ოცნებიდან რეალობამდე'}/>
+                    <BestRoomsSlider bestRooms={bestRoomsData.bestRooms}/>
+                </div>
+            </div>
+        </>
     );
 }

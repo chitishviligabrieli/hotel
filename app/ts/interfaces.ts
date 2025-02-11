@@ -17,3 +17,15 @@ export interface ButtonProps{
     value: string;
     icon?: string;
 }
+
+
+export interface MainProps {
+    h1: string;
+    slogan: string;
+}
+
+export interface NavbarItemProps{
+    active: boolean;
+    pathname: string;
+    title: string;
+}

@@ -1,0 +1,18 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1176px;
+}
+
+.navbarList{
+  display: flex;
+  gap: 16px;
+}

@@ -29,3 +29,8 @@ export interface NavbarItemProps{
     pathname: string;
     title: string;
 }
+
+export interface counterProps{
+    count: number;
+    object: string;
+}

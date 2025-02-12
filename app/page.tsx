@@ -3,7 +3,7 @@ import BestRoomsSlider from "@/app/components/BestRoomsSlider/BestRoomsSlider";
 import MainComp from "@/app/components/Main/Main";
 import styles from './page.module.scss'
 import Navbar from "@/app/components/Navbar/Navbar";
-
+import Counter from "./components/counter/counter";
 const bestRoomsData = {
     bestRooms: [
         {
@@ -72,14 +72,8 @@ const bestRoomsData = {
 
 export default function Home() {
     return (
-        <>
-            <Navbar/>
-            <div className={styles.wrapper}>
-                <div className={styles.container}>
-                    <MainComp h1={'შენი იდეალური დასვენების ადგილი'} slogan={'ოცნებიდან რეალობამდე'}/>
-                    <BestRoomsSlider bestRooms={bestRoomsData.bestRooms}/>
-                </div>
-            </div>
-        </>
+        <div>
+            <Counter count={22} object="resturant"/>
+        </div>
     );
 }

@@ -4,6 +4,74 @@ import MainComp from "@/app/components/Main/Main";
 import styles from './page.module.scss'
 import Navbar from "@/app/components/Navbar/Navbar";
 import Counter from "./components/counter/counter";
+import { imagesData } from "./components/ImagesContainer/imagesDummyData/ImagesData";
+import ImagesContainer from "./components/ImagesContainer/ImagesContainer";
+const bestRoomsData = {
+    bestRooms: [
+        {
+            id: 1,
+            image: "/image.png",
+            room: 1,
+            guest: 2,
+            sale: 20,
+        },
+        {
+            id: 2,
+            image: "/image.png",
+            room: 2,
+            guest: 4,
+            sale: 15,
+        },
+        {
+            id: 3,
+            image: "/image.png",
+            room: 3,
+            guest: 3,
+            sale: 10,
+        },
+        {
+            id: 4,
+            image: "/image.png",
+            room: 3,
+            guest: 3,
+            sale: 10,
+        }, {
+            id: 5,
+            image: "/image.png",
+            room: 3,
+            guest: 3,
+            sale: 10,
+        }, {
+            id: 6,
+            image: "/image.png",
+            room: 3,
+            guest: 3,
+            sale: 10,
+        },
+        {
+            id: 7,
+            image: "/image.png",
+            room: 3,
+            guest: 3,
+            sale: 10,
+        },
+        {
+            id: 8,
+            image: "/image.png",
+            room: 3,
+            guest: 3,
+            sale: 10,
+        },
+        {
+            id: 9,
+            image: "/image.png",
+            room: 3,
+            guest: 3,
+            sale: 10,
+        },
+    ],
+};
+
 import PlansWrapper from "@/app/components/PlansWrapper/PlansWrapper";
 
 const bestRoomsData = [
@@ -99,25 +167,17 @@ const bestPlansData = [
     },
 ]
 
+
 export default function Home() {
 
-    const onClick = () => {
-        console.log("clicked");
-    }
+  
 
     return (
-        <>
-            <Navbar/>
-            <div className={styles.wrapper}>
-                <div className={styles.container}>
-                    <MainComp h1={'შენი იდეალური დასვენების ადგილი'} slogan={'ოცნებიდან რეალობამდე'}/>
-                    <BestRoomsSlider bestRooms={bestRoomsData}/>
-                </div>
-            </div>
-            <div>
-                <Counter count={22} object="resturant"/>
-            </div>
-            <PlansWrapper onClick={onClick} bestPlans={bestPlansData}/>
-        </>
+
+        <div>
+            <ImagesContainer type={'type1'} images={imagesData.type1}/>
+        </div>
+
+       
     );
 }

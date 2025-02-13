@@ -1,4 +1,6 @@
-export interface BestRoomsProps  {
+import exp from "constants";
+
+export interface BestRoomsProps {
     id: number;
     image: string;
     room: number;
@@ -6,12 +8,12 @@ export interface BestRoomsProps  {
     sale: number;
 }
 
-export interface  BestRoom{
+export interface BestRoom {
     bestRooms: BestRoomsProps[];
 }
 
 
-export interface ButtonProps{
+export interface ButtonProps {
     action: () => void;
     size: 'big' | 'small' | 'medium';
     value: string;
@@ -24,16 +26,26 @@ export interface MainProps {
     slogan: string;
 }
 
-export interface NavbarItemProps{
+export interface NavbarItemProps {
     active: boolean;
     pathname: string;
     title: string;
 }
 
-export interface counterProps{
+export interface counterProps {
     count: number;
     object: string;
 }
+
+
+export interface Image {
+    src: string;
+    alt: string;
+}
+
+export interface ImagesContainerProps {
+    type: "type1" | "type2";
+    images: Image[];
 
 export interface PlansProps{
     id: number

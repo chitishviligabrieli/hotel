@@ -1,0 +1,12 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 126px;
+  height: 28px;
+  border-radius: var(--radius-full, 9999px);
+  border: 1px solid #BCC5DC;
+  background: rgba(155, 167, 202, 0.20);
+  color: #2D3856;
+  font-size: 14px;
+}

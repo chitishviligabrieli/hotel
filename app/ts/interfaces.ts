@@ -34,3 +34,19 @@ export interface counterProps{
     count: number;
     object: string;
 }
+
+export interface PlansProps{
+    id: number
+    plaName: string;
+    price: number;
+    popular: boolean;
+    used: number;
+    nights: number;
+    days: number;
+    onClick: () => void;
+}
+
+export interface BestPlansProps  {
+    bestPlans: PlansProps[]
+    onClick: () => void;
+}

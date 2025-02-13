@@ -117,7 +117,7 @@ export default function Home() {
             <div>
                 <Counter count={22} object="resturant"/>
             </div>
-            <PlansWrapper onClick={onClick} bestPlans={bestPlansData} />
+            <PlansWrapper onClick={onClick} bestPlans={bestPlansData}/>
         </>
     );
-
+}

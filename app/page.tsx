@@ -4,6 +4,8 @@ import MainComp from "@/app/components/Main/Main";
 import styles from './page.module.scss'
 import Navbar from "@/app/components/Navbar/Navbar";
 import Counter from "./components/counter/counter";
+import { imagesData } from "./components/ImagesContainer/imagesDummyData/ImagesData";
+import ImagesContainer from "./components/ImagesContainer/ImagesContainer";
 const bestRoomsData = {
     bestRooms: [
         {
@@ -73,7 +75,7 @@ const bestRoomsData = {
 export default function Home() {
     return (
         <div>
-            <Counter count={22} object="resturant"/>
+            <ImagesContainer type={'type1'} images={imagesData.type1}/>
         </div>
     );
 }

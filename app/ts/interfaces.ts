@@ -37,6 +37,7 @@ export interface counterProps {
     object: string;
 }
 
+
 export interface Image {
     src: string;
     alt: string;
@@ -45,4 +46,19 @@ export interface Image {
 export interface ImagesContainerProps {
     type: "type1" | "type2";
     images: Image[];
+
+export interface PlansProps{
+    id: number
+    plaName: string;
+    price: number;
+    popular: boolean;
+    used: number;
+    nights: number;
+    days: number;
+    onClick: () => void;
+}
+
+export interface BestPlansProps  {
+    bestPlans: PlansProps[]
+    onClick: () => void;
 }

@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  max-width: 1176px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.containerWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.containerText {
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 28px;
+}

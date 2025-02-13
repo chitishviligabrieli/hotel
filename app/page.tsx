@@ -120,4 +120,4 @@ export default function Home() {
             <PlansWrapper onClick={onClick} bestPlans={bestPlansData} />
         </>
     );
-}
+

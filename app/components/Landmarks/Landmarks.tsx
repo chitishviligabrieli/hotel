@@ -6,9 +6,12 @@ import LandmarksCard from "./components/LandmarksCard/LandmarksCard";
 const Card: React.FC = () => {
   return (
     <div className={styles.container}>
-      {cardData.map((card) => (
-        <LandmarksCard key={card.id} {...card} />
-      ))}
+      <h2 className={styles.containerText}>ღირსშესანიშნაობები ახლოს</h2>
+      <div className={styles.containerWrapper}>
+        {cardData.map((card) => (
+          <LandmarksCard key={card.id} {...card} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -32,3 +32,27 @@ body {
 .page-module-scss-module__qnDekq__container .swiper {
   padding-bottom:300px
 }
+
+.react-datepicker-ignore-onclickoutside{
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.react-datepicker-ignore-onclickoutside{
+  gap: 0 !important;
+}
+
+.react-datepicker__input-container{
+  width: 142px !important;
+}
+
+input{
+  width: 142px !important;
+}
+
+/*.react-datepicker-popper{*/
+/*  z-index: 1000 !important;*/
+/*}*/

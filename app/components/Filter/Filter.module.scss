@@ -3,4 +3,14 @@
   height: 86px;
   border-radius: 50px;
   background-color: white;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.line{
+  background: #D8D8D8;
+  width: 1px;
+  height: 49px;
 }

@@ -1,5 +1,3 @@
-import exp from "constants";
-
 export interface BestRoomsProps {
     id: number;
     image: string;
@@ -24,6 +22,7 @@ export interface ButtonProps {
 export interface MainProps {
     h1: string;
     slogan: string;
+    onSearch: () => void;
 }
 
 export interface NavbarItemProps {
@@ -46,9 +45,10 @@ export interface Image {
 export interface ImagesContainerProps {
     type: "type1" | "type2";
     images: Image[];
+}
 
-export interface PlansProps{
-    id: number
+export interface PlansProps {
+    id: number;
     plaName: string;
     price: number;
     popular: boolean;
@@ -61,4 +61,16 @@ export interface PlansProps{
 export interface BestPlansProps  {
     bestPlans: PlansProps[]
     onClick: () => void;
+}
+
+export interface FilterProps {
+    onSearch: () => void;
+}
+
+export interface DateDropdownProps {
+    title: string;
+    selectedDate: Date | null;
+    onChange: (date: Date | null) => void;
+    minDate?: Date;
+    disabled?: boolean;
 }

@@ -9,7 +9,7 @@ export default function Main(props: MainProps) {
                 <h1 className={styles.h1}>{props.h1}</h1>
                 <span className={styles.slogan}>{props.slogan}</span>
             </div>
-            <Filter/>
+            <Filter onSearch={props.onSearch}/>
         </div>
 
     )

@@ -7,6 +7,7 @@ import Counter from "./components/counter/counter";
 import { imagesData } from "./components/ImagesContainer/imagesDummyData/ImagesData";
 import ImagesContainer from "./components/ImagesContainer/ImagesContainer";
 import BarsAndResturants from "./components/BarsAndResturants/BarsAndResturants";
+import CommonSpace from "./components/CommonSpace/commonSpace";
 const bestRoomsData = {
     bestRooms: [
         {
@@ -111,7 +112,7 @@ export default function Home() {
     return (
 
         <div>
-            <BarsAndResturants/>
+            <CommonSpace/>
         </div>
 
        

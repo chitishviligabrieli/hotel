@@ -1,0 +1,35 @@
+.container {
+    max-width: 1176px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.rightSideWrapper {
+    max-width: 561px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.heading {
+    color: black;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: "DM Sans";
+    line-height: 30px;
+    text-align: center;
+}
+
+.paragraph {
+    color: #7E7E7E;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'DM Sans';
+    line-height: 24px;
+    
+}
+

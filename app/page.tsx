@@ -6,6 +6,7 @@ import Navbar from "@/app/components/Navbar/Navbar";
 import Counter from "./components/counter/counter";
 import { imagesData } from "./components/ImagesContainer/imagesDummyData/ImagesData";
 import ImagesContainer from "./components/ImagesContainer/ImagesContainer";
+import BarsAndResturants from "./components/BarsAndResturants/BarsAndResturants";
 const bestRoomsData = {
     bestRooms: [
         {
@@ -110,7 +111,7 @@ export default function Home() {
     return (
 
         <div>
-            <ImagesContainer type={'type1'} images={imagesData.type1}/>
+            <BarsAndResturants/>
         </div>
 
        

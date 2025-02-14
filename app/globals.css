@@ -53,6 +53,6 @@ input{
   width: 142px !important;
 }
 
-/*.react-datepicker-popper{*/
-/*  z-index: 1000 !important;*/
-/*}*/
+.react-datepicker-popper{
+  z-index: 2 !important;
+}
